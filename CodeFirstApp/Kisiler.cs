@@ -8,13 +8,14 @@ namespace CodeFirstApp
 {
     class Kisiler
     {
-        public int KisiId { get; set; }
+        public int Id { get; set; }
         public string Adi { get; set; }
-        public int Soyadi { get; set; }
+        public string Soyadi { get; set; }
         public int Cinsiyet { get; set; }
         public DateTime DogumTarihi { get; set; }
         public string Telefon { get; set; }
         public string TcKimlik { get; set; }
         public string Email { get; set; }
+
     }
 }

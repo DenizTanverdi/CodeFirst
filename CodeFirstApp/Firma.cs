@@ -8,7 +8,7 @@ namespace CodeFirstApp
 {
     class Firma
     {
-        public int FirmaId { get; set; }
+        public int Id { get; set; }
         public string Unvan { get; set; }
         public string Adres { get; set; }
         public string Adres2 { get; set; }
@@ -17,5 +17,6 @@ namespace CodeFirstApp
         public string Telefon { get; set; }
         public string Email { get; set; }
         public string WebUrl { get; set; }
+   
     }
 }
