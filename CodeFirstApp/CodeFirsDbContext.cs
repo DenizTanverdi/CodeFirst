@@ -19,8 +19,9 @@ namespace CodeFirstApp
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);
+            //base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<Kisiler>().ToTable("Kisiler");
+            modelBuilder.Entity<Kisiler>().Property(p => p.Adi).HasColumnName("Adi").HasColumnOrder(2).HasMaxLength(30).IsRequired();
             modelBuilder.Entity<Firma>().ToTable("Firma");
             modelBuilder.Entity<Kategori>().ToTable("Kategori");
         }
